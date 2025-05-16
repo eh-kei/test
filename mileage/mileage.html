@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>.row {line-height: 60px; border-top: 1px solid rgba(0,0,0,0.1) }</style>
+    <title>使用マイル</title>
+</head>
+ <body style="background-color: aliceblue;">
+    <div class="container">
+        <div style="text-align: center; padding: 15px 0;">
+            <img src="/earthhopper/logo.png" style="width: 100px;">
+        </div><br>
+        <div class="container">
+            <h3>基本情報</h3>
+            <div class="row">
+                <div class="col">施設名</div>
+                <div class="col">ABCスキー場</div>
+            </div>
+            <div class="row">
+                <div class="col">発券日</div>
+                <div class="col">2025年12月31日</div>
+            </div>
+            <div class="row">
+                <div class="col">A: 窓口価格</div>
+                <div class="col">6,000 円</div>
+            </div><br>
+            <h3>マイル使用</h3>
+            <div class="row">
+                <div class="col">保有マイル</div>
+                <div class="col">1,800 マイル</div>
+            </div>
+            <div class="row">
+                <div class="col">B: 使用マイル</div>
+                <div class="col d-flex align-items-center">
+                    <div class="input-group">
+                        <input type="tel" id="use" class="form-control" placeholder="0">
+                        <span class="input-group-text bg-primary text-white" id="apply">適用</span>
+                    </div>
+                </div>
+                <p id="warning" class="text-danger" hidden>※ 使用マイルが保有マイルを超えています</p>
+            </div>
+            <div class="row">
+                <div class="col">A-B: ご利用料金</div>
+                <div class="col"><b id="price" style="font-size: 32px">6,000</b> 円</div>
+            </div>
+        </div><br>
+        <div class="d-grid gap-2">
+            <a href="qrcode.html" class="btn btn-primary">クレジットカードで支払う</a>
+            <a href="ticket.html" class="btn" style="color: white; background-color: red;">PayPayで支払う</a>
+            <a href="#" class="btn btn-danger">楽天Payで支払う</a>
+        </div>
+    </div><br><br><br>
+    <script src="mileage.js"></script>
+</body>
+</html>
